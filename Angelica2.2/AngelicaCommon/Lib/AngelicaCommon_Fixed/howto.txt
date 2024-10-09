@@ -1,0 +1,27 @@
+2015.11.29
+Fyyre
+
+C:\Angelica SDK 2.0_SM\SDK\ACSDK\lib
+
+objconv (by Anger Fog http://www.agner.org )
+
+1. Use objconv to extract all .obj files from .lib
+example: objconv -lx AngelicaCommon.lib
+
+Fix bug in AAssist.cpp
+AWString AS2WC(const char* szAnsi)
+AWString AS2WC(int iCodePage, const char* szAnsi)
+Rebuild AngelicaCommon
+
+copy new AAssist.obj to directory with extracted .obj files
+use MSVC C++ 6.0 linker to rebuild lib:
+
+example:
+link.exe /LIB AAssist.obj ACounter.obj AList.obj ALog.obj AMemory.obj APerlinNoise1D.obj APerlinNoise2D.obj APerlinNoise3D.obj APerlinNoiseBase.obj ARandomGen.obj AString.obj ATempMemMan.obj ATime.obj  AWString.obj jexception.obj /OUT:AngelicaCommon.lib
+
+AngelicaCommon_dr.lib
+AngelicaCommon.lib
+
+in directory with howto.txt not contain bug of incorrect call to delete
+
+

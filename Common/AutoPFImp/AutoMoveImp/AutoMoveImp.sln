@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoMoveImp", "AutoMoveImp.vcxproj", "{5E312718-12B7-40B8-B183-984B3F3423D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DbgRelease|x86 = DbgRelease|x86
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E312718-12B7-40B8-B183-984B3F3423D0}.DbgRelease|x86.ActiveCfg = DbgRelease|Win32
+		{5E312718-12B7-40B8-B183-984B3F3423D0}.DbgRelease|x86.Build.0 = DbgRelease|Win32
+		{5E312718-12B7-40B8-B183-984B3F3423D0}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E312718-12B7-40B8-B183-984B3F3423D0}.Debug|x86.Build.0 = Debug|Win32
+		{5E312718-12B7-40B8-B183-984B3F3423D0}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0226F690-6D5E-45D0-AAD9-ED86E44CD9CE}
+	EndGlobalSection
+EndGlobal

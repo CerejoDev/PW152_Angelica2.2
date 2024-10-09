@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AUInterface", "AUInterface_2.2.vcxproj", "{65B587D0-E310-4550-8E58-77EAF9501E92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DbgRelease_NoAudio|x86 = DbgRelease_NoAudio|x86
+		DbgRelease|x86 = DbgRelease|x86
+		Debug_NoAudio|x86 = Debug_NoAudio|x86
+		Debug|x86 = Debug|x86
+		Release_NoAudio|x86 = Release_NoAudio|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.DbgRelease_NoAudio|x86.ActiveCfg = DbgRelease_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.DbgRelease_NoAudio|x86.Build.0 = DbgRelease_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.DbgRelease|x86.ActiveCfg = DbgRelease|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.DbgRelease|x86.Build.0 = DbgRelease|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Debug_NoAudio|x86.ActiveCfg = Debug_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Debug_NoAudio|x86.Build.0 = Debug_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Debug|x86.ActiveCfg = Debug|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Debug|x86.Build.0 = Debug|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Release_NoAudio|x86.ActiveCfg = Release_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Release_NoAudio|x86.Build.0 = Release_NoAudio|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Release|x86.ActiveCfg = Release|Win32
+		{65B587D0-E310-4550-8E58-77EAF9501E92}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {906F98C1-102B-4C28-AB3D-3DDC5F65755F}
+	EndGlobalSection
+EndGlobal

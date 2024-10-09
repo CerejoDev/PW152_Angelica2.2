@@ -1,0 +1,89 @@
+/*
+* FILE: AResUnlitModelImpl.h
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/7
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#ifndef _AResUnlitModelImpl_H_
+#define _AResUnlitModelImpl_H_
+
+#include "IResUnlitModel.h"
+#include <vector>
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Types and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class AResInterfaceImpl;
+class AResFxMaterialImpl;
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Declare of Global functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Class AResUnlitModelImpl
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class AResUnlitModelImpl : public IResUnlitModel
+{
+
+public:		//	Types
+
+	typedef std::vector<AResFxMaterialImpl*> ResFxMtlArray;
+
+public:		//	Constructor and Destructor
+
+	explicit AResUnlitModelImpl(AResInterfaceImpl* pResImpl);
+	virtual ~AResUnlitModelImpl(void);
+
+public:		//	Attributes
+
+public:		//	Operations
+
+	bool Init(const char* szPath);
+	bool Init(A3DUnlitModel* pFxMtl);
+	void Release();
+
+protected:	//	Attributes
+
+	AResInterfaceImpl* m_pResImpl;
+	ResFxMtlArray m_aResMtls;
+
+protected:	//	Operations
+
+	virtual int GetNumMtls() const;
+	virtual IResFxMaterial* GetMeshMaterial(int nIdx) const;
+
+};
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Inline functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+#endif	//	_AResUnlitModelImpl_H_
+
+

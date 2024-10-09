@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ElementSkill", "ElementSkill.vcxproj", "{3EF63875-7FE5-4785-A4A9-7E00A83F3215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DbgRelease|x86 = DbgRelease|x86
+		Debug|x86 = Debug|x86
+		DebugCRTAllocator|x86 = DebugCRTAllocator|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.DbgRelease|x86.ActiveCfg = DbgRelease|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.DbgRelease|x86.Build.0 = DbgRelease|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.Debug|x86.Build.0 = Debug|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.DebugCRTAllocator|x86.ActiveCfg = DebugCRTAllocator|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.DebugCRTAllocator|x86.Build.0 = DebugCRTAllocator|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.Release|x86.ActiveCfg = Release|Win32
+		{3EF63875-7FE5-4785-A4A9-7E00A83F3215}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDBE7346-4474-454B-840B-B0A765692F41}
+	EndGlobalSection
+EndGlobal

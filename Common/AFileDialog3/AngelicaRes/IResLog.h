@@ -1,0 +1,90 @@
+/*
+* FILE: IResLog.h
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/7
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#ifndef _IResLog_H_
+#define _IResLog_H_
+
+#include "AFileExpDecl.h"
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Types and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Declare of Global functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Class IResLog
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class _AFILE_EXP_ IResLog
+{
+
+public:		//	Types
+
+public:		//	Constructor and Destructor
+
+	IResLog();
+	virtual ~IResLog(void) = 0;
+
+public:		//	Attributes
+
+public:		//	Operations
+
+	// Init a log file
+	//		szLogFile	will be the logs path
+	//		szHelloMsg	is the hello message in the log
+	//		bAppend		is the flag to append at the end of the log file
+	virtual bool Init(const char* szLogFile, const char* szHelloMsg, bool bAppend=false) = 0;
+
+	// Release the log file
+	//		this call will close the log file pointer and write a finished message
+	virtual bool Release() = 0;
+
+	// Output a variable arguments log message;
+	virtual bool Log(const char* fmt, ...) = 0;
+
+	// Output a string as a log message;
+	virtual bool LogString(const char* szString) = 0;
+
+protected:	//	Attributes
+
+protected:	//	Operations
+
+};
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Inline functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+#endif	//	_IResLog_H_
+
+

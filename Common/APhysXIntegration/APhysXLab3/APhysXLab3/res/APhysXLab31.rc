@@ -1,0 +1,616 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "..\AppFrame\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "..\\AppFrame\\resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""APhysXLab31.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "APhysXLab31.ico"
+IDR_APhysXLab31TYPE     ICON                    "APhysXLab31Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "Toolbar.bmp"
+IDB_WORKSPACE           BITMAP                  "workspace.bmp"
+IDB_TOOLBAR256          BITMAP                  "Toolbar256.bmp"
+IDB_TREECTRL            BITMAP                  "TreeCtrl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "重置系统...",                     ID_FILE_NEW
+        MENUITEM "打开...",                       ID_FILE_OPEN
+        MENUITEM "保存",                          ID_FILE_SAVE
+        MENUITEM "另存为...",                      ID_FILE_SAVE_AS
+        MENUITEM "场景回放...",                     ID_FILE_REPLAY
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        POPUP "切换拖拽效果\tF7"
+        BEGIN
+            MENUITEM "平移",                          ID_MODE_DRAG_MOVE
+            MENUITEM "旋转",                          ID_MODE_DRAG_ROTATE
+            MENUITEM "缩放",                          ID_MODE_DRAG_SCALE
+        END
+        MENUITEM "加载地形...",                     ID_EDIT_ADDTERRAIN
+        MENUITEM "生成 PhysX 地形数据...",            ID_EDIT_PHYSXTRNGEN
+        MENUITEM "生成测试场景...",                   ID_EDIT_TSCENEGEN
+        MENUITEM "保存焦点物体...",                   ID_EDIT_SAVEOBJ
+        MENUITEM "读取物体文件...",                   ID_EDIT_LOADOBJ
+        MENUITEM SEPARATOR
+        MENUITEM "添加静态模型...",                   ID_EDIT_ADDSTATICOBJ
+        MENUITEM "添加SMD模型...",                  ID_EDIT_ADDSMD
+        MENUITEM "添加ECM模型...",                  ID_EDIT_ADDECM
+        MENUITEM "添加GFX模型...",                  ID_EDIT_ADDPHYSXGFX
+        MENUITEM "添加ForceField...",             ID_EDIT_ADDPHYSXFF
+        MENUITEM "添加Dummy物体",                   ID_EDIT_ADDDUMMY
+        MENUITEM "添加SMSocket物体",                ID_EDIT_ADDSMSOCKET
+        MENUITEM "添加SocketSM物体",                ID_EDIT_ADDSOCKETSM
+        MENUITEM "添加聚光灯物体",                     ID_EDIT_ADDSPOTLIGHT
+        POPUP "添加区域"
+        BEGIN
+            MENUITEM "矩形区域",                        ID_EDIT_ADDRGNBOX
+            MENUITEM "球形区域",                        ID_EDIT_ADDRGNSPHERE
+            MENUITEM "胶囊形区域",                       ID_EDIT_ADDRGNCAPSULE
+        END
+        MENUITEM "添加上一模型\tF9",                  ID_EDIT_ADDLASTOBJ
+        MENUITEM SEPARATOR
+    END
+    POPUP "模式(&P)"
+    BEGIN
+        MENUITEM "编辑模式(&E)\tF1",                ID_MODE_EDIT, CHECKED
+        MENUITEM "模拟模式(&S)\tF2",                ID_MODE_SIMULATE
+        MENUITEM "游戏模式(&P)\tF3",                ID_MODE_PLAY
+        MENUITEM "独立窗口游戏模式",                    ID_MODE_APHYSXSAMPLE
+        MENUITEM SEPARATOR
+        POPUP "切换驱动模式\tF4"
+        BEGIN
+            MENUITEM "动画驱动",                        ID_MODE_DVN_ANIMATION
+            MENUITEM "混合驱动",                        ID_MODE_DVN_PARTPHYSX
+            MENUITEM "物理驱动",                        ID_MODE_DVN_PUREPHYSX
+        END
+        MENUITEM "PhysX Profile(&F)\tF5",       ID_MODE_PX_PROFILE
+        MENUITEM "PhysX Debug Render(&D)\tF6",  ID_MODE_PX_DEBUG
+        MENUITEM "摄像机绑定模式\t C",                 ID_MODE_C_FOLLOWING
+        MENUITEM "硬件加速",                        ID_MODE_PHYSXHW
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM " ",                           ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "网格地形",                        ID_VIEW_WIRE
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "场景设置...",                     ID_SCENESETTING
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About APhysXLab31...",       ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "Standard Toolbar",            ID_VIEW_TOOLBAR
+        MENUITEM "&Workspace",                  ID_VIEW_WSB_CLASSIFIED
+        MENUITEM "&Workspace 2",                ID_VIEW_PROPERTIES
+        MENUITEM "&Output",                     ID_VIEW_OUTPUT
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR1
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_MODE_EDIT,           VIRTKEY, NOINVERT
+    VK_F3,          ID_MODE_PLAY,           VIRTKEY, NOINVERT
+    VK_F6,          ID_MODE_PX_DEBUG,       VIRTKEY, NOINVERT
+    VK_F5,          ID_MODE_PX_PROFILE,     VIRTKEY, NOINVERT
+    VK_F2,          ID_MODE_SIMULATE,       VIRTKEY, NOINVERT
+    VK_F23,         ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F23,         ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About APhysXLab31"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "APhysXLab31 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    PUSHBUTTON      "http://www.wanmei.com",IDC_COMPANY_URL,40,36,119,14
+END
+
+IDD_DLGPHYSXTRNBUILDER DIALOGEX 0, 0, 250, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "生成 PhysX 地形数据"
+FONT 9, "MS Shell Dlg", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "开始",IDOK,141,163,47,12
+    PUSHBUTTON      "关闭",IDCANCEL,193,163,47,12
+    LTEXT           "地形文件：",IDC_STATIC,7,11,37,8
+    EDITTEXT        IDC_EDIT_TRNFILE,43,7,177,12,ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWSE,221,7,19,12
+    EDITTEXT        IDC_EDIT_TRNINFO,7,27,233,109,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,143,233,12
+END
+
+IDD_DLGSCENESETTING DIALOGEX 0, 0, 278, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,37,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,206,50,14
+    GROUPBOX        "脚本",IDC_STATIC,21,19,230,102
+    LTEXT           "场景脚本：",IDC_STATIC,39,36,40,12
+    EDITTEXT        IDC_SCENESCRIPT,38,49,192,16,ES_AUTOHSCROLL
+    LTEXT           "所有对象默认脚本：",IDC_STATIC,39,76,88,12
+    EDITTEXT        IDC_DEFSCRIPT,37,91,192,16,ES_AUTOHSCROLL
+    GROUPBOX        "限帧",IDC_STATIC,21,129,229,31
+    CONTROL         "开启限帧",IDC_CKB_FRAMELIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,142,44,11
+    EDITTEXT        IDC_EDT_FRAMEMAX,161,140,68,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "限制帧数：",IDC_STATIC,119,145,41,8
+END
+
+IDD_DLGSCENEBUILDER DIALOGEX 0, 0, 186, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Build Test Scene"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,33,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,66,50,14
+    LTEXT           "地形名称：",IDC_STATIC,7,31,40,8
+    LTEXT           "场景名称：",IDC_STATIC,7,10,40,8
+    EDITTEXT        IDC_EDIT_TRNNAME,48,26,131,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCENENAME,48,7,131,12,ES_AUTOHSCROLL
+    LTEXT           "模型路径：",IDC_STATIC,7,50,40,8
+    EDITTEXT        IDC_EDIT_MODELPATH,48,45,131,12,ES_AUTOHSCROLL
+END
+
+IDD_DLG_FFEDIT DIALOGEX 0, 0, 175, 51
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "力场编辑"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,30,50,14
+    LTEXT           "文件名：",IDC_STATIC,7,11,32,8
+    EDITTEXT        IDC_EDIT_FILENAME,39,7,102,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "00409004e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "APhysXLab31.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "APhysXLab31.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLGPHYSXTRNBUILDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLGSCENESETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_DLGSCENEBUILDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DLG_FFEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "APhysXLab3\n\nAPhysXLab3\nAPhysXLab3 Files (*.pls)\n.pls\nAPhysXLab3.Document\nAPhysXLab3.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_APP_TITLE_EMBEDDING "APhysXLab3"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_DRAGOPT    "拖拽效果"
+    ID_INDICATOR_DRVMODE    "驱动模式"
+    ID_INDICATOR_CURSTATE   "当前状态"
+    ID_INDICATOR_SHOOTMODE  "弹物模式"
+    ID_INDICATOR_SHOOTTYPE  "弹物类别"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "清除当前场景和地形\n重置系统"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_CUSTOMIZE       "Customize toolbars and menus.\nCustomize"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_TOOLBAR        "Standard"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_USER_TOOLBAR1   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR2   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR3   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR4   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR5   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR6   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR7   "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_USER_TOOLBAR8   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR9   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR10  "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_ADDTERRAIN      "加载一个地形"
+    ID_EDIT_PHYSXTRNGEN     "根据选定的地形生成其PhysX数据"
+    ID_MODE_EDIT            "进入编辑状态"
+    ID_MODE_SIMULATE        "进入物理模拟状态"
+    ID_MODE_PLAY            "进入游戏状态(创建主角并进行物理模拟)"
+    ID_MODE_DVN_ANIMATION   "模型的运动由动画驱动"
+    ID_MODE_DVN_PARTPHYSX   "模型的运动由动画和物理合成驱动"
+    ID_MODE_DVN_PUREPHYSX   "模型的运动由物理驱动"
+    ID_MODE_PX_PROFILE      "Show PhysX Profile Information"
+    ID_MODE_PX_DEBUG        "Show PhysX Debug Render"
+    ID_MODE_DRAG_MOVE       "平移操作的模型"
+    ID_MODE_DRAG_ROTATE     "旋转操作的模型"
+    ID_MODE_DRAG_SCALE      "缩放操作的模型"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODE_C_FOLLOWING     "摄像机与主角绑定，随主角一起移动"
+    ID_MODE_PHYSXHW         "启用物理硬件加速"
+    ID_EDIT_ADDSTATICOBJ    "添加一个静态模型"
+    ID_EDIT_ADDSMD          "添加一个SMD模型"
+    ID_EDIT_ADDECM          "添加一个ECM模型"
+    ID_EDIT_ADDPHYSXGFX     "添加一个GFX模型"
+    ID_EDIT_ADDPHYSXFF      "添加一个Force Field"
+    ID_EDIT_ADDLASTOBJ      "添加最近添加的模型对象"
+    ID_EDIT_ADDRGNBOX       "添加一个矩形区域"
+    ID_EDIT_ADDRGNSPHERE    "添加一个球形区域"
+    ID_EDIT_ADDRGNCAPSULE   "添加一个胶囊形区域"
+    ID_EDIT_ADDDUMMY        "添加一个空物体"
+    ID_EDIT_ADDSMSOCKET     "添加一个可挂接的空物体（被动）"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_ADDSOCKETSM     "添加一个可挂接的空物体（主动）"
+    ID_EDIT_SAVEOBJ         "将当前焦点物体保存到文件"
+    ID_EDIT_LOADOBJ         "根据物体文件加载一个物体"
+    ID_VIEW_WIRE            "显示网格地形"
+    ID_EDIT_ADDSPOTLIGHT    "添加一个点光源"
+    ID_FILE_REPLAY          "播放已录制的场景\n场景回放"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "APhysXLab31.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

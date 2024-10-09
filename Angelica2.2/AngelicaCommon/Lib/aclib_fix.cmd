@@ -1,0 +1,1 @@
+link.exe /LIB AAssist.obj ACounter.obj AList.obj ALog.obj AMemory.obj AMemoryDbg.obj APerlinNoise1D.obj APerlinNoise2D.obj APerlinNoise3D.obj APerlinNoiseBase.obj ARandomGen.obj AString.obj ATempMemMan.obj ATime.obj  AWString.obj jexception.obj /OUT:AngelicaCommon_dr.lib

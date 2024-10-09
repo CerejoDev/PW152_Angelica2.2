@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ICLThreadPool">
+      <UniqueIdentifier>{44f9e601-76fe-47bd-b5fe-fa712ac52d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICLImg">
+      <UniqueIdentifier>{016dba9f-b02b-41db-b7f9-3faec150bee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICLImg\ICLImg_Type">
+      <UniqueIdentifier>{2c5fafad-07a7-4738-98f1-a70cfb6d087a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICLTasks">
+      <UniqueIdentifier>{c14e4e0b-9121-4eca-8628-66afe816cd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICLFile">
+      <UniqueIdentifier>{3d7e01bf-8f0e-42f4-8fb1-ab0d7d437a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{0993f9f0-1d4f-4901-8074-34242e7202a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ImageCacheLib\ICLStdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLUnicodeCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLThreadPool.cpp">
+      <Filter>ICLThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLThreadTask.cpp">
+      <Filter>ICLThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLThreadWrapper.cpp">
+      <Filter>ICLThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImg.cpp">
+      <Filter>ICLImg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImpl.cpp">
+      <Filter>ICLImg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplDDS.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplECM.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplGfx.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplSMD.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplUMD.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLImgImplUMDS.cpp">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLTaskProcFolder.cpp">
+      <Filter>ICLTasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\ICLFile.cpp">
+      <Filter>ICLFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ImageCacheLib\PlatformIndependFuncs.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ImageCacheLib\ICLCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLNotifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLRequireHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLStdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLUnicodeCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLThreadPool.h">
+      <Filter>ICLThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLThreadTask.h">
+      <Filter>ICLThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLThreadWrapper.h">
+      <Filter>ICLThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImg.h">
+      <Filter>ICLImg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImpl.h">
+      <Filter>ICLImg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplDDS.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplECM.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplGfx.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplSMD.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplUMD.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLImgImplUMDS.h">
+      <Filter>ICLImg\ICLImg_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLTaskProcFolder.h">
+      <Filter>ICLTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\ICLFile.h">
+      <Filter>ICLFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ImageCacheLib\PlatformIndependFuncs.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

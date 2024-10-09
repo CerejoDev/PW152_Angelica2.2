@@ -1,0 +1,19 @@
+//  ************* Angelica 3D shader ***************
+
+version 5
+
+"IceDragon"
+{
+	//  General properties
+	pixelshader      Shaders\ps\two_layer_addsigned.txt
+
+	//  Stage 0
+	{
+	}
+	
+	//	Stage 1
+	{
+			filter TEXF_LINEAR
+			address TADDR_WRAP
+	}
+}

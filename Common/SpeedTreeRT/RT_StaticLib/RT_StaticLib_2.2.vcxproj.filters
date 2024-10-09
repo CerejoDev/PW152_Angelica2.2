@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{581b0bf3-73fc-4154-9392-36d6d9dd417e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6c6b650d-c1ae-45c8-be6b-973b394b6d6a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="LibSpline_Source">
+      <UniqueIdentifier>{5ab9c582-75a3-4cd6-8dbe-21567d129640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibRandom_Source">
+      <UniqueIdentifier>{7c314188-f346-4d60-b2d0-e24e6cd0215b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibGlobals_Source">
+      <UniqueIdentifier>{11ba63b2-5b31-48c3-9c17-4387e1a50c4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibFilename_Source">
+      <UniqueIdentifier>{eda4f8d7-4e52-4f35-a5a8-1fdc07215079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibVector_Source">
+      <UniqueIdentifier>{8c5f7bc6-eaf5-4d95-b842-077bec934a7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SourceCode\BillboardLeaf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\Branch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\BranchInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\FileAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\FrondEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\IndexedGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafLod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LightingEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\ProjectedShadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\SimpleBillboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\SpeedTreeRT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\TreeEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\TreeInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\WindEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\WindInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibSpline_Source\IdvSpline.cpp">
+      <Filter>LibSpline_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\ExtendedReal.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\IdvRandom.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Region.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\RotTransform.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Transform.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec3.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SourceCode\BillboardLeaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\Endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\FileAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\IdvFastMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\IndexedGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\Instances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LeafGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LeafLod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LightingEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\ProjectedShadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\SpeedTreeRT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\StructsInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\StructsSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\TreeEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\WindEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibSpline_Source\IdvSpline.h">
+      <Filter>LibSpline_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\ExtendedReal.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\IdvRandom.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibGlobals_Source\IdvGlobals.h">
+      <Filter>LibGlobals_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibFilename_Source\IdvFilename.h">
+      <Filter>LibFilename_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibVector_Source\IdvVector.h">
+      <Filter>LibVector_Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

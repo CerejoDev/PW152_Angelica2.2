@@ -1,0 +1,85 @@
+/*
+* FILE: AResSkillGfxEventMan.h
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/2
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#ifndef _AResSkillGfxEventMan_H_
+#define _AResSkillGfxEventMan_H_
+
+#include "A3DSkillGfxEventMan.h"
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Types and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Declare of Global functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Class AResSkillGfxEventMan
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class AResSkillGfxEventMan : public A3DSkillGfxEventMan
+{
+
+public:		//	Types
+
+public:		//	Constructor and Destructor
+
+	AResSkillGfxEventMan(void);
+	virtual ~AResSkillGfxEventMan(void);
+
+public:		//	Attributes
+
+public:		//	Operations
+
+protected:	//	Attributes
+
+protected:	//	Operations
+
+	//	Override interface from A3DSkillGfxEvent
+	virtual A3DSkillGfxEvent* CreateOneEvent(GfxMoveMode mode);
+
+	virtual bool GetPositionById(const GETPOSITIONBYID_PARAMS& param, A3DVECTOR3& vPos);
+
+	virtual bool GetDirAndUpById(clientid_t nId
+		, A3DVECTOR3& vDir
+		, A3DVECTOR3& vUp);
+
+	virtual float GetTargetScale(clientid_t nTargetId);
+
+};
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Inline functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+#endif	//	_AResSkillGfxEventMan_H_
+
+

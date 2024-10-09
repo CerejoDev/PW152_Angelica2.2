@@ -1,0 +1,70 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "AFileDialogDevTester"=.\AFileDialogDevTester.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name AFileDialogDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ImageCacheLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "AFileDialogDll"=.\AFileDialogDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/AFileDialog3/Complier_VC6", ZDYAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ImageCacheLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ImageCacheLib"=.\ImageCacheLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/AFileDialog3/Complier_VC6", ZDYAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

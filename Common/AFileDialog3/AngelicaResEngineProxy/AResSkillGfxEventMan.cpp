@@ -1,0 +1,83 @@
+/*
+* FILE: AResSkillGfxEventMan.cpp
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/2
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#include "stdafx.h"
+#include "AResEnginePreRequireHeader.h"
+#include "AResSkillGfxEventMan.h"
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Reference to External variables and functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Local Types and Variables and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Local functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Implement AResSkillGfxEventMan
+//	
+///////////////////////////////////////////////////////////////////////////
+
+AResSkillGfxEventMan::AResSkillGfxEventMan(void)
+{
+}
+
+AResSkillGfxEventMan::~AResSkillGfxEventMan(void)
+{
+}
+
+//	Override interface from A3DSkillGfxEvent
+A3DSkillGfxEvent* AResSkillGfxEventMan::CreateOneEvent(GfxMoveMode mode)
+{
+	return new A3DSkillGfxEvent(this, mode);
+}
+
+bool AResSkillGfxEventMan::GetPositionById(const GETPOSITIONBYID_PARAMS& param, A3DVECTOR3& vPos)
+{
+	vPos = 0.0f;
+	return true;
+}
+
+bool AResSkillGfxEventMan::GetDirAndUpById(clientid_t nId
+							 , A3DVECTOR3& vDir
+							 , A3DVECTOR3& vUp)
+{
+	vDir.Set(0, 0, 1.0f);
+	vUp.Set(0, 1.0f, 0);
+	return true;
+}
+
+float AResSkillGfxEventMan::GetTargetScale(clientid_t nTargetId)
+{
+	return 1.8f;
+}

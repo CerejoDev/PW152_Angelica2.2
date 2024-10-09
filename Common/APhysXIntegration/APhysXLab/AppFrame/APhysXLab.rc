@@ -1,0 +1,701 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""..\\res\\APhysXLab.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\APhysXLab.ico"
+IDR_APHYSXTYPE          ICON    DISCARDABLE     "res\\APhysXLabDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "重置系统 ...",                ID_FILE_RESET
+        MENUITEM "打开...",                     ID_FILE_OPEN
+        MENUITEM "保存",                        ID_FILE_SAVE
+        MENUITEM "另存为...",                   ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "chf转chb...",                 ID_FILE_CHF2CHB
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "加载地形 ...",                ID_EDIT_ADDTERRAIN
+        MENUITEM "生成 PhysX 地形数据 ...",     ID_EDIT_PHYSXTRNGEN
+        MENUITEM "编辑ForceField文件...",       ID_EDIT_PHYSXFFMAKER
+        MENUITEM SEPARATOR
+        MENUITEM "添加静态模型 ...",            ID_EDIT_ADDSTATICOBJ
+        MENUITEM "添加SMD模型...",              ID_EDIT_ADDSMD
+        MENUITEM "添加ECM模型...",              ID_EDIT_ADDECM
+        MENUITEM "添加GFX模型...",              ID_EDIT_ADDPHYSXGFX
+        MENUITEM "添加CHB模型...",              ID_EDIT_ADDCHB
+        MENUITEM "添加ForceField...",           ID_EDIT_ADDPHYSXFF
+        MENUITEM "添加上一模型\tF9",            ID_EDIT_ADDLASTOBJ
+        MENUITEM SEPARATOR
+        POPUP "切换拖拽效果\tF8"
+        BEGIN
+            MENUITEM "平移",                        ID_EDIT_DRAGANDMOVE
+            MENUITEM "缩放",                        ID_EDIT_DRAGANDSCALE
+            MENUITEM "旋转",                        ID_EDIT_DRAGANDROTATE
+        END
+        MENUITEM "弹出物信息设置...",           ID_EDIT_SCALE
+    END
+    POPUP "模式(&P)"
+    BEGIN
+        MENUITEM "编辑模式(&E)\tF1",            ID_MODE_EDIT, CHECKED
+        MENUITEM "模拟模式(&S)\tF2",            ID_MODE_SIMULATE
+        MENUITEM "游戏模式(&P)\tF3",            ID_MODE_PLAY
+        MENUITEM SEPARATOR
+        POPUP "切换驱动模式\tF4"
+        BEGIN
+            MENUITEM "动画驱动",                    ID_MODE_DVN_ANIMATION
+            MENUITEM "混合驱动",                    ID_MODE_DVN_PARTPHYSX
+            MENUITEM "物理驱动",                    ID_MODE_DVN_PUREPHYSX
+        END
+        MENUITEM "PhysX Profile(&F)\tF5",       ID_MODE_PX_PROFILE
+        MENUITEM "PhysX Debug Render(&D)\tF6",  ID_MODE_PX_DEBUG
+        MENUITEM "摄像机绑定模式\t C",          ID_MODE_C_FOLLOWING
+        MENUITEM "硬件加速",                    ID_MODE_PHYSXHW
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "网格地形",                    ID_VIEW_WIRE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 APhysXLab(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_POP MENU DISCARDABLE 
+BEGIN
+    POPUP "PopMenu"
+    BEGIN
+        MENUITEM "编辑ForceField",              ID_MENU_EDITMOD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    VK_F1,          ID_MODE_EDIT,           VIRTKEY, NOINVERT
+    VK_F2,          ID_MODE_SIMULATE,       VIRTKEY, NOINVERT
+    VK_F3,          ID_MODE_PLAY,           VIRTKEY, NOINVERT
+    VK_F5,          ID_MODE_PX_PROFILE,     VIRTKEY, NOINVERT
+    VK_F6,          ID_MODE_PX_DEBUG,       VIRTKEY, NOINVERT
+    VK_F9,          ID_EDIT_ADDLASTOBJ,     VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 APhysXLab"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "APhysXLab 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TRNBUILDER DIALOG DISCARDABLE  0, 0, 257, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "生成 PhysX 地形数据"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "开始",IDOK,152,172,47,12
+    PUSHBUTTON      "关闭",IDCANCEL,203,172,47,12
+    GROUPBOX        "地形数据源",IDC_STATIC,7,7,243,140
+    LTEXT           "地形数据文件：",IDC_STATIC,13,19,56,8
+    EDITTEXT        IDC_EDIT_TRNFILE,69,15,158,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWSE,227,16,19,11
+    EDITTEXT        IDC_EDIT_TRNINFO,13,32,233,109,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,151,243,12
+END
+
+IDD_SHOOTSCALE DIALOG DISCARDABLE  0, 0, 92, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "弹出物体信息设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "应用",IDOK,7,43,36,14
+    PUSHBUTTON      "取消",IDCANCEL,49,43,36,14
+    LTEXT           " Scale：",IDC_STATIC,7,11,29,8
+    EDITTEXT        IDC_SCALE,36,7,49,12,ES_AUTOHSCROLL
+    LTEXT           "Speed：",IDC_STATIC,7,27,30,9
+    EDITTEXT        IDC_SPEED,36,24,49,12,ES_AUTOHSCROLL
+END
+
+IDD_FLAGS_SETTING DIALOG DISCARDABLE  0, 0, 330, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Flags属性设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "应用",IDOK,109,154,50,14
+    PUSHBUTTON      "取消",IDCANCEL,162,154,50,14
+    GROUPBOX        "模型属性",IDC_STATIC_MODEL,7,7,152,45
+    CONTROL         "APX_OBJFLAG_CC_ADD_PUSHFORCE",IDC_CHECK_PF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,19,141,10
+    CONTROL         "APX_OBJFLAG_CC_ADD_STANDFORCE",IDC_CHECK_SF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,29,144,10
+    CONTROL         "APX_OBJFLAG_CC_CAN_ATTACH",IDC_CHECK_CAA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,39,144,10
+    GROUPBOX        "人物属性",IDC_STATIC_PEOPLE,7,57,152,65
+    CONTROL         "Is Main Actor",IDC_CHECK_ISMA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,68,58,9
+    CONTROL         "Is NPC Actor",IDC_CHECK_ISNPC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,78,57,9
+    CONTROL         "Has PhysX CC",IDC_CHECK_HASCC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,88,60,9
+    CONTROL         "Has PhysX LWCC",IDC_CHECK_HASLWCC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,82,88,70,9
+    CONTROL         "Has PhysX Body",IDC_CHECK_HASPB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,98,66,9
+    GROUPBOX        "NPC动作",IDC_STATIC_NPCACTION,161,7,162,45
+    CONTROL         "跳舞",IDC_RADIO_DANCE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,168,19,28,10
+    CONTROL         "在附近行走",IDC_RADIO_WALKAROUND,"Button",
+                    BS_AUTORADIOBUTTON,197,19,53,10
+    CONTROL         "随摄像机行走",IDC_RADIO_WALKCAMERA,"Button",
+                    BS_AUTORADIOBUTTON,250,19,58,10
+    CONTROL         "沿x轴行走",IDC_RADIO_WALKXAXIS,"Button",
+                    BS_AUTORADIOBUTTON,168,29,53,10
+    GROUPBOX        "PhysX CC属性",IDC_STATIC_CC,161,57,162,65
+    CONTROL         "APX_CCF_SLIDE_ENABLE",IDC_CHECK_CCSLIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,68,144,10
+    CONTROL         "APX_CCF_ADD_PUSHFORCE",IDC_CHECK_CCPF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,78,144,10
+    CONTROL         "APX_CCF_ADD_STANDFORCE",IDC_CHECK_CCSF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,88,144,10
+    CONTROL         "APX_CCF_ATTACHMENT_ENFORCE_OPEN",IDC_CHECK_CCFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,98,149,10
+    CONTROL         "APX_CCF_ATTACHMENT_ENFORCE_CLOSE",IDC_CHECK_CCFC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,108,155,10
+    GROUPBOX        "碰撞通道",IDC_STATIC_CHANNEL,7,126,316,24
+    CONTROL         "Common",IDC_RADIO_CNL_CMN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,136,58,8
+    CONTROL         "Independent (0-127)",IDC_RADIO_CNL_IDP,"Button",
+                    BS_AUTORADIOBUTTON,73,136,82,8
+    CONTROL         "Independent (cc common host)",IDC_RADIO_CNL_IDPCMN,
+                    "Button",BS_AUTORADIOBUTTON,169,136,121,8
+END
+
+IDD_FFEDIT DIALOG DISCARDABLE  0, 0, 391, 324
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ForceField Maker"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,133,303,32,14
+    PUSHBUTTON      "退出",IDCANCEL,169,303,32,14
+    COMBOBOX        IDC_COMBO_FFTYPE,50,7,68,67,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FF Type:",IDC_STATIC,7,11,29,8
+    LTEXT           "Shape Type:",IDC_STATIC,7,31,43,8
+    CONTROL         "Box",IDC_RADIO_STBOX,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,50,32,24,8
+    CONTROL         "Sphere",IDC_RADIO_STSPHERE,"Button",BS_AUTORADIOBUTTON,
+                    129,32,33,8
+    CONTROL         "Capsule",IDC_RADIO_STCAPSULE,"Button",
+                    BS_AUTORADIOBUTTON,213,32,36,8
+    CONTROL         "Convex",IDC_RADIO_STCONVEX,"Button",BS_AUTORADIOBUTTON,
+                    304,35,39,8
+    LTEXT           "Shape Size:",IDC_STATIC,7,46,41,8
+    EDITTEXT        IDC_EDIT_SSX,58,42,35,12
+    LTEXT           "x:",IDC_STATIC,50,46,8,8
+    LTEXT           "y:",IDC_STATIC,129,46,8,8
+    LTEXT           "z:",IDC_STATIC,213,46,8,8
+    EDITTEXT        IDC_EDIT_SSY,138,43,35,12
+    EDITTEXT        IDC_EDIT_SSZ,222,42,35,12
+    EDITTEXT        IDC_EDIT_FILENAME,41,305,52,12
+    LTEXT           "文件名：",IDC_STATIC,7,309,32,8
+    LTEXT           "半径",IDC_STATIC_R,97,46,17,8
+    LTEXT           "高",IDC_STATIC_H,176,46,17,8
+    PUSHBUTTON      "打开...",IDC_BTN_LOAD,97,303,32,14
+    LTEXT           "Coordinate:",IDC_STATIC,7,21,41,8
+    CONTROL         "NX_FFC_CARTESIAN",IDC_RADIO_CORCAR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,50,21,80,8
+    CONTROL         "NX_FFC_SPHERICAL",IDC_RADIO_CORSPH,"Button",
+                    BS_AUTORADIOBUTTON,129,21,80,8
+    CONTROL         "NX_FFC_CYLINDRICAL",IDC_RADIO_CORCYL,"Button",
+                    BS_AUTORADIOBUTTON,213,21,87,8
+    CONTROL         "NX_FFC_TOROIDAL",IDC_RADIO_CORTOR,"Button",
+                    BS_AUTORADIOBUTTON,304,21,80,8
+    LTEXT           "Scale Tpye:",IDC_STATIC,7,71,39,8
+    LTEXT           "Rigid Body",IDC_STATIC,50,57,38,8
+    LTEXT           "Cloth",IDC_STATIC,129,57,34,8
+    LTEXT           "Fluid",IDC_STATIC,213,57,34,8
+    LTEXT           "Soft Body",IDC_STATIC,304,57,34,8
+    COMBOBOX        IDC_COMBO_RB,50,67,68,42,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CLOTH,129,67,68,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FLUID,213,67,68,47,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SB,304,67,68,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Scale Value:",IDC_STATIC,7,83,42,8
+    EDITTEXT        IDC_EDIT_RB,50,79,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLOTH,129,79,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FLUID,213,79,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SB,304,79,29,12,ES_AUTOHSCROLL
+    GROUPBOX        "Wind",IDC_STATIC_WIND,7,96,377,50
+    LTEXT           "Force and Dir:",IDC_STATIC_WFD,13,106,21,24
+    LTEXT           "x:",IDC_STATIC_WX,35,107,8,8
+    LTEXT           "y:",IDC_STATIC_WY,35,120,8,8
+    LTEXT           "z:",IDC_STATIC_WZ,35,134,8,8
+    EDITTEXT        IDC_EDIT_WFDX,43,103,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WFDY,43,116,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WFDZ,43,130,35,12,ES_AUTOHSCROLL
+    LTEXT           "Wind Time:",IDC_STATIC_WWT,81,107,38,8
+    EDITTEXT        IDC_EDIT_WWT,121,103,35,12,ES_AUTOHSCROLL
+    LTEXT           "Rest Time:",IDC_STATIC_WRT,81,120,38,8
+    EDITTEXT        IDC_EDIT_WRT,121,116,35,12,ES_AUTOHSCROLL
+    LTEXT           "Cycle Time:",IDC_STATIC_WCT,81,134,38,8
+    EDITTEXT        IDC_EDIT_WCT,121,130,35,12,ES_AUTOHSCROLL
+    LTEXT           "Target Velocity:",IDC_STATIC_VTV,13,161,51,8
+    GROUPBOX        "Vortex",IDC_STATIC_VORTEX,7,150,377,57
+    LTEXT           "Target Velcity Scale:",IDC_STATIC_VTVM,13,173,67,8
+    LTEXT           "Target Radius:",IDC_STATIC_VTR,13,185,48,8
+    LTEXT           "Target Radius Scale:",IDC_STATIC_VTRM,13,197,68,8
+    EDITTEXT        IDC_EDIT_VTV,82,157,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VTVM,82,169,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VTR,82,181,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VTRM,82,193,35,12,ES_AUTOHSCROLL
+    LTEXT           "Centripetal Force:",IDC_STATIC_VCF,121,161,57,8
+    LTEXT           "Elevation Force:",IDC_STATIC_VEF,121,173,53,8
+    LTEXT           "Elevation Scale:",IDC_STATIC_VES,121,184,54,9
+    LTEXT           "Noise:",IDC_STATIC_VN,121,197,27,8
+    EDITTEXT        IDC_EDIT_VCF,180,157,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VEF,180,169,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VES,180,181,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VN,180,193,29,12,ES_AUTOHSCROLL
+    GROUPBOX        "Explosion",IDC_STATIC_EXPLOSION,7,209,377,21
+    LTEXT           "Center Force:",IDC_STATIC_ECF,13,220,44,8
+    LTEXT           "Radius:",IDC_STATIC_ER,97,220,26,8
+    LTEXT           "Life Time:",IDC_STATIC_ELT,163,220,33,8
+    LTEXT           "Quadric FallOff:",IDC_STATIC_EQFO,236,220,51,8
+    EDITTEXT        IDC_EDIT_ECF,58,216,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ER,124,216,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ELT,197,216,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EQFO,287,216,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Gravitation",IDC_STATIC_GRAVITATION,7,233,377,21
+    LTEXT           "Gravity:",IDC_STATIC_GG,13,243,27,8
+    LTEXT           "x",IDC_STATIC_GX,41,243,8,8
+    LTEXT           "y",IDC_STATIC_GY,85,243,8,8
+    LTEXT           "z",IDC_STATIC_GZ,131,243,8,8
+    EDITTEXT        IDC_EDIT_GX,49,239,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GY,93,239,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GZ,139,239,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buoyancy",IDC_STATIC_BUOYANCY,7,254,188,21
+    GROUPBOX        "Vacuum",IDC_STATIC_VACUUM,196,254,188,21
+    LTEXT           "Density:",IDC_STATIC_BD,13,264,27,8
+    EDITTEXT        IDC_EDIT_BD,45,260,35,12,ES_AUTOHSCROLL
+    LTEXT           "Cycle Distance:",IDC_STATIC_WCD,160,107,53,8
+    EDITTEXT        IDC_EDIT_WCD,213,103,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "绑定到主角",IDC_BTN_BINDMA,338,303,46,14
+    LTEXT           "当前绑定到主角：",IDC_STATIC,207,307,64,10
+    LTEXT           "",IDC_STATIC_BINDMA,276,305,58,12
+    GROUPBOX        "BossAura",IDC_STATIC_BOSSAURA,7,275,377,21
+    LTEXT           "Force Value:",IDC_STATIC_BAFV,13,286,44,8
+    LTEXT           "Radius:",IDC_STATIC_BAR,97,286,26,8
+    EDITTEXT        IDC_EDIT_BAFV,58,282,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BAR,124,282,35,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "APhysXLab Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "APhysXLab\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "APhysXLab.EXE\0"
+            VALUE "ProductName", "APhysXLab 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRNBUILDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_SHOOTSCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 85
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_FLAGS_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_FFEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "APhysXLab\n\nAPhysX\n\n\nAPhysXLab.Document\nAPhysX Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "APhysXLab"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_ADDTERRAIN      "加载一个地形"
+    ID_EDIT_ADDSTATICOBJ    "添加一个静态模型"
+    ID_EDIT_ADDSMD          "添加一个SMD模型"
+    ID_EDIT_ADDPHYSXGFX     "添加一个GFX模型"
+    ID_EDIT_ADDLASTOBJ      "添加最近添加的模型对象"
+    ID_EDIT_PHYSXTRNGEN     "根据选定的地形生成其PhysX数据"
+    ID_MODE_EDIT            "进入编辑状态"
+    ID_MODE_SIMULATE        "进入物理模拟状态"
+    ID_MODE_PLAY            "进入游戏状态"
+    ID_MODE_PHYSXPROFILE    "Show PhysX Profile Information"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MODE_PHYSXDEBUGRENDER "Show PhysX Debug Render"
+    ID_MODE_PX_PROFILE      "Show PhysX Profile Information"
+    ID_MODE_PX_DEBUG        "Show PhysX Debug Render"
+    ID_VIEW_WIRE            "显示地形网格"
+    ID_MODE_DVN_ANIMATION   "模型的运动由动画驱动"
+    ID_MENUITEM32790        "模型的运动一半由动画驱动"
+    ID_MODE_DVN_PARTPHYSX   "模型的运动由动画和物理合成驱动"
+    ID_MODE_DVN_PUREPHYSX   "模型的运动由物理驱动"
+    ID_MODE_C_FOLLOWING     "摄像机与主角绑定，随主角一起移动"
+    ID_EDIT_ADDECM          "添加一个ECM模型"
+    ID_EDIT_SCALE           "设置弹出物体的信息"
+    ID_FILE_SAVEAS          "用新名保存活动文档\n另存为"
+    ID_EDIT_ADDPHYSXFF      "添加一个Force Field"
+    ID_EDIT_PHYSXFFMAKER    "编辑，生成ForceField文件"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_DRAGOPT    "拖拽效果"
+    ID_INDICATOR_DRVMODE    "驱动模式"
+    ID_INDICATOR_CURSTATE   "当前状态"
+    ID_INDICATOR_SHOOTMODE  "弹物模式"
+    ID_INDICATOR_SHOOTTYPE  "弹物类别"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_RECENT          "最近打开的文档\n最近打开的文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MODE_PHYSXHW         "启用物理硬件加速"
+    ID_MENUITEM32801        "编辑这个ForceField模型文件"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\APhysXLab.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

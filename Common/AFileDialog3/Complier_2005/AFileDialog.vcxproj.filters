@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Wrappers">
+      <UniqueIdentifier>{cfca67c2-0ab3-45d6-b016-5dab8af5f8d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExportImpls">
+      <UniqueIdentifier>{4dc18e1b-3ea5-4fe0-a4f2-d6c6e7d2a6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AFileDialog2">
+      <UniqueIdentifier>{33771d55-a629-464a-aaf5-5b8f0645d281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Preview">
+      <UniqueIdentifier>{05092495-ea2b-407b-9ebc-5cd5f8c56f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Preview\RenderItem">
+      <UniqueIdentifier>{8d18c486-85d1-46d0-81fe-e4e8f4b3c212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFile">
+      <UniqueIdentifier>{bbd4a57f-ba6a-4856-b6cf-e267497aa262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AngelicaRes">
+      <UniqueIdentifier>{55ef4854-bcac-4890-b3a2-452f15c23d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AngelicaResEngineProxy">
+      <UniqueIdentifier>{42a1cb9e-390a-4775-9cd3-2ad00cbd0e11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AFileDialogDll\AFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileDialogDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileGfxInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileSkillGfxEventMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFTaskPlaySound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\DynSizeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\Render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileDialogWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileImageWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AImagePreviewWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\ASoundPlayerWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AImagePreviewImpl.cpp">
+      <Filter>ExportImpls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\ASoundPlayerImpl.cpp">
+      <Filter>ExportImpls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileDialog2.cpp">
+      <Filter>AFileDialog2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileItem.cpp">
+      <Filter>AFileDialog2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFileItemType.cpp">
+      <Filter>AFileDialog2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AListCtrl2.cpp">
+      <Filter>AFileDialog2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFilePreview.cpp">
+      <Filter>Preview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\AFilePreviewWnd.cpp">
+      <Filter>Preview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\ECMRenderItem.cpp">
+      <Filter>Preview\RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\GfxRenderItem.cpp">
+      <Filter>Preview\RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\SMDRenderItem.cpp">
+      <Filter>Preview\RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\UMDRenderItem.cpp">
+      <Filter>Preview\RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AFileDialogDll\UMDSRenderItem.cpp">
+      <Filter>Preview\RenderItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\CommonFileDlg.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\CommonFileName.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\ItemInfo.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\Renderable2DObject.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\Renderable3DObject.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\RenderableObject.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CommonFile\RenderWnd.cpp">
+      <Filter>CommonFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AngelicaRes.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\ARes.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResAfm.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResAtt.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResBon.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResBsp.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResChf.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResEcm.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResFactory.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResFile.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResFuncs.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResGfx.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResLmd.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResManager.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResSingle.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResSki.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResSmd.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResSpt.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResUmd.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\AResUmds.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IRes.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResAtt.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResComAct.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResComActEvent.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResECModel.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResFxMaterial.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResFxUIParam.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResGfx.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResGfxElement.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResInterface.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResLog.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResSkin.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResSkinModel.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResSpeedTree.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResUnlitModel.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaRes\IResUnlitModelSet.cpp">
+      <Filter>AngelicaRes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResAttImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResComActEventImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResComActImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResECModelImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResFxMaterialImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResFxUIParamImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResGfxElementImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResGfxImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResGfxInterface.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResInterfaceImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResLogImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResSkillGfxEventMan.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResSkinImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResSkinModelImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResSpeedTreeImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResUnlitModelImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AngelicaResEngineProxy\AResUnlitModelSetImpl.cpp">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AFileDialogDll\AFDRequireHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileDialogDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileGfxInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileSkillGfxEventMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFTaskPlaySound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\DynSizeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\IAFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\Render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\SyncWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\TypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileDialogWrapper.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileExpDecl.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileImageWrapper.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AImagePreviewWrapper.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\ASoundPlayerWrapper.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AImagePreviewImpl.h">
+      <Filter>ExportImpls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\ASoundPlayerImpl.h">
+      <Filter>ExportImpls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileDialog2.h">
+      <Filter>AFileDialog2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileItem.h">
+      <Filter>AFileDialog2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFileItemType.h">
+      <Filter>AFileDialog2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AListCtrl2.h">
+      <Filter>AFileDialog2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFilePreview.h">
+      <Filter>Preview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\AFilePreviewWnd.h">
+      <Filter>Preview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\ARenderItem.h">
+      <Filter>Preview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\ECMRenderItem.h">
+      <Filter>Preview\RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\GfxRenderItem.h">
+      <Filter>Preview\RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\SMDRenderItem.h">
+      <Filter>Preview\RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\UMDRenderItem.h">
+      <Filter>Preview\RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AFileDialogDll\UMDSRenderItem.h">
+      <Filter>Preview\RenderItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\CommonFileDlg.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\CommonFileName.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\ItemInfo.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\Renderable2DObject.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\Renderable3DObject.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\RenderableObject.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CommonFile\RenderWnd.h">
+      <Filter>CommonFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\ARes.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResAfm.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResAtt.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResBon.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResBsp.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResChf.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResEcm.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResFactory.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResFile.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResFuncs.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResGfx.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResLmd.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResManager.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResPreRequireHeader.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResSharedPtr.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResSingle.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResSki.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResSmd.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResSpt.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResTypes.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResUmd.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\AResUmds.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IRes.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResAtt.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResComAct.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResComActEvent.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResECModel.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResFxMaterial.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResFxUIParam.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResGfx.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResGfxElement.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResInterface.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResLog.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResSkin.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResSkinModel.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResSpeedTree.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResUnlitModel.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaRes\IResUnlitModelSet.h">
+      <Filter>AngelicaRes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResAttImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResComActEventImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResComActImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResECModelImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResEnginePreRequireHeader.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResFxMaterialImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResFxUIParamImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResGfxElementImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResGfxImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResGfxInterface.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResInterfaceImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResLogImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResSkillGfxEventMan.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResSkinImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResSkinModelImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResSpeedTreeImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResUnlitModelImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AngelicaResEngineProxy\AResUnlitModelSetImpl.h">
+      <Filter>AngelicaResEngineProxy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\AFileDialogDll\AFileDialogDll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\AFileDialogDll\res\arrow_back.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\arrow_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\icon_directory.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\icon_other.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\icon_picture.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\icon_sound.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\AFileDialogDll\res\icon_text.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

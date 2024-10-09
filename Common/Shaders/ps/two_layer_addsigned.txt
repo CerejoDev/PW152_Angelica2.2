@@ -1,0 +1,27 @@
+; two_layer_addsigned pixel shader
+
+; r0:	diffuse map
+; r1:	second map
+; c0.x:	second layer control factor
+
+ps.1.4
+
+def c5, 0, 0, 0, 0
+def c6, -0.5, -0.5, -0.5, 0
+
+; Diffuse layer
+texld r0, t0
+
+; Second layer
+texld r1, t1
+mov r2, r1
+lrp r1, c0.x, r1, c5
+
+; Blend two layers (AddSigned)
+add r0, r0, r1
+add r0, r0, c6
+
+mul r2.a, r2.a, c0.x
+mov r0.a, r2.a
+
+

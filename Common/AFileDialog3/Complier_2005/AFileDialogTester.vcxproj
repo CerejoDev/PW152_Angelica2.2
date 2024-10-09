@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebug|Win32">
+      <Configuration>UnicodeDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebug|x64">
+      <Configuration>UnicodeDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeRelease|Win32">
+      <Configuration>UnicodeRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeRelease|x64">
+      <Configuration>UnicodeRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{1FDC3AA4-2C96-4F28-91B9-21DFD376A9CB}</ProjectGuid>
+    <RootNamespace>AFileDialogTester</RootNamespace>
+    <SccProjectName>"$/AFileDialog3", CBYAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35004.147</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;..\..\..\Projects3.1\GfxCommon3\Output\Include;..\..\..\Projects3.1\Angelica3.1\Output\Include\AMedia;..\..\..\Projects3.1\Angelica3.1\Output\Include\AFile;..\..\..\Projects3.1\Angelica3.1\Output\Include\ACommon;..\..\..\Projects3.1\Angelica3.1\Output\Include\AAudio;..\..\..\Projects3.1\Angelica3.1\Output\Include\AEX;..\..\..\Projects3.1\Angelica3.1\Output\Include\APhysX;..\..\..\Projects3.1\Angelica3.1\Output\Include\A3D;..\..\..\Projects3.1\Angelica3.1\Output\Include\3rdSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AFileDialog3_d.lib;DxErr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;..\..\..\Projects3.1\GfxCommon3\Output\Lib;..\..\..\Projects3.1\Angelica3.1\Output\BCG10\Lib;..\..\..\Projects3.1\Angelica3.1\Output\Lib\3rdSDK;..\..\..\Projects3.1\Angelica3.1\Output\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName)_d.exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3_d.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vld_loader.lib;AFileDialog3_d.lib;DxErr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName)_d.exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3_d.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;..\..\..\Projects3.1\GfxCommon3\Output\Include;..\..\..\Projects3.1\Angelica3.1\Output\Include\AMedia;..\..\..\Projects3.1\Angelica3.1\Output\Include\AFile;..\..\..\Projects3.1\Angelica3.1\Output\Include\ACommon;..\..\..\Projects3.1\Angelica3.1\Output\Include\AAudio;..\..\..\Projects3.1\Angelica3.1\Output\Include\AEX;..\..\..\Projects3.1\Angelica3.1\Output\Include\APhysX;..\..\..\Projects3.1\Angelica3.1\Output\Include\A3D;..\..\..\Projects3.1\Angelica3.1\Output\Include\3rdSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AFileDialog3.lib;Dxerr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;..\..\..\Projects3.1\GfxCommon3\Output\Lib;..\..\..\Projects3.1\Angelica3.1\Output\BCG10\Lib;..\..\..\Projects3.1\Angelica3.1\Output\Lib\3rdSDK;..\..\..\Projects3.1\Angelica3.1\Output\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName).exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AFileDialog3.lib;Dxerr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName).exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;..\..\..\Projects3.1\GfxCommon3\Output\Include;..\..\..\Projects3.1\Angelica3.1\Output\Include\AMedia;..\..\..\Projects3.1\Angelica3.1\Output\Include\AFile;..\..\..\Projects3.1\Angelica3.1\Output\Include\ACommon;..\..\..\Projects3.1\Angelica3.1\Output\Include\AAudio;..\..\..\Projects3.1\Angelica3.1\Output\Include\AEX;..\..\..\Projects3.1\Angelica3.1\Output\Include\APhysX;..\..\..\Projects3.1\Angelica3.1\Output\Include\A3D;..\..\..\Projects3.1\Angelica3.1\Output\Include\3rdSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>VLD_Loader.lib;AFileDialog3_d.lib;DxErr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;..\..\..\Projects3.1\GfxCommon3\Output\Lib;..\..\..\Projects3.1\Angelica3.1\Output\BCG10\Lib;..\..\..\Projects3.1\Angelica3.1\Output\Lib\3rdSDK;..\..\..\Projects3.1\Angelica3.1\Output\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName)_d.exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3_d.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>VLD_Loader.lib;AFileDialog3_d.lib;DxErr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName)_d.exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3_d.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;..\..\..\Projects3.1\GfxCommon3\Output\Include;..\..\..\Projects3.1\Angelica3.1\Output\Include\AMedia;..\..\..\Projects3.1\Angelica3.1\Output\Include\AFile;..\..\..\Projects3.1\Angelica3.1\Output\Include\ACommon;..\..\..\Projects3.1\Angelica3.1\Output\Include\AAudio;..\..\..\Projects3.1\Angelica3.1\Output\Include\AEX;..\..\..\Projects3.1\Angelica3.1\Output\Include\APhysX;..\..\..\Projects3.1\Angelica3.1\Output\Include\A3D;..\..\..\Projects3.1\Angelica3.1\Output\Include\3rdSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AFileDialog3.lib;Dxerr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_u.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;..\..\..\Projects3.1\GfxCommon3\Output\Lib;..\..\..\Projects3.1\Angelica3.1\Output\BCG10\Lib;..\..\..\Projects3.1\Angelica3.1\Output\Lib\3rdSDK;..\..\..\Projects3.1\Angelica3.1\Output\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName).exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\AFileDialogDll;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_A_FORBID_NEWDELETE;_A_FORBID_MALLOC;_PROJ_IN_ANGELICA_3;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AFileDialog3.lib;Dxerr.lib;dxguid.lib;dsound.lib;d3d9.lib;d3dx9.lib;Angelica_lib_u.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin_VC2005\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib_2005;..\DepLib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\Bin_VC2005\$(ProjectName).exe ..\..\Bin
+copy ..\Lib_2005\AFileDialog3.dll ..\..\Bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AFileDialogTester\AFileDialogDevTester.cpp" />
+    <ClCompile Include="..\AFileDialogTester\AFileDialogDevTesterDoc.cpp" />
+    <ClCompile Include="..\AFileDialogTester\AFileDialogDevTesterView.cpp" />
+    <ClCompile Include="..\AFileDialogTester\Global.cpp" />
+    <ClCompile Include="..\AFileDialogTester\MainFrm.cpp" />
+    <ClCompile Include="..\AFileDialogTester\PreviewWnd.cpp" />
+    <ClCompile Include="..\AFileDialogTester\Render.cpp" />
+    <ClCompile Include="..\AFileDialogTester\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AFileDialogTester\AFileDialogDevTester.h" />
+    <ClInclude Include="..\AFileDialogTester\AFileDialogDevTesterDoc.h" />
+    <ClInclude Include="..\AFileDialogTester\AFileDialogDevTesterView.h" />
+    <ClInclude Include="..\AFileDialogTester\Global.h" />
+    <ClInclude Include="..\AFileDialogTester\MainFrm.h" />
+    <ClInclude Include="..\AFileDialogTester\PreviewWnd.h" />
+    <ClInclude Include="..\AFileDialogTester\Render.h" />
+    <ClInclude Include="..\AFileDialogTester\resource.h" />
+    <ClInclude Include="..\AFileDialogTester\StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\AFileDialogTester\res\AFileDialogDevTester.ico" />
+    <Image Include="..\AFileDialogTester\res\AFileDialogDevTesterDoc.ico" />
+    <Image Include="..\AFileDialogTester\res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\AFileDialogTester\AFileDialogDevTester.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AFileDialog.vcxproj">
+      <Project>{a0de7239-115a-4061-81bc-638491704464}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ImageCacheLib.vcxproj">
+      <Project>{ad6c5437-6537-4fee-bfc8-cdeb9158d01b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\ROOT\Common\AFileDialog3\AFileDialogTester\AFileDialogDevTester.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,92 @@
+/*
+* FILE: AResSkinImpl.h
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/7
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#ifndef _AResSkinImpl_H_
+#define _AResSkinImpl_H_
+
+#include "IResSkin.h"
+#include <vector>
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Types and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class IResFxMaterial;
+class AResInterfaceImpl;
+class AResFxMaterialImpl;
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Declare of Global functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Class AResSkinImpl
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class AResSkinImpl : public IResSkin
+{
+
+public:		//	Types
+
+	typedef std::vector<AResFxMaterialImpl*> ResFxMaterialArray;
+
+public:		//	Constructor and Destructor
+
+	explicit AResSkinImpl(AResInterfaceImpl* pResImpl);
+	virtual ~AResSkinImpl(void);
+
+public:		//	Attributes
+
+public:		//	Operations
+
+	bool Init(const char* szPath);
+	bool Init(A3DSkin* pSkin);
+	void Release();
+
+protected:	//	Attributes
+
+	AString m_strSkinFile;
+	ResFxMaterialArray m_aResFxMtls;
+	AResInterfaceImpl* m_pResImpl;
+
+protected:	//	Operations
+
+	virtual const char* GetFileName() const;
+	virtual int GetMaterialNum() const;
+	virtual IResFxMaterial* GetMaterial(int nIdx) const;
+
+};
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Inline functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+#endif	//	_AResSkinImpl_H_
+
+

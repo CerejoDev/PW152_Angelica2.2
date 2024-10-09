@@ -1,0 +1,88 @@
+/*
+* FILE: AResUnlitModelSetImpl.h
+*
+* DESCRIPTION: 
+*
+* CREATED BY: Zhangyachuan, 2010/7/7
+*
+* HISTORY: 
+*
+* Copyright (c) 2010 Archosaur Studio, All Rights Reserved.
+*/
+
+#ifndef _AResUnlitModelSetImpl_H_
+#define _AResUnlitModelSetImpl_H_
+
+#include "IResUnlitModelSet.h"
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Define and Macro
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Types and Global variables
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class IResUnlitModel;
+class AResInterfaceImpl;
+class AResUnlitModelImpl;
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Declare of Global functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Class AResUnlitModelSetImpl
+//	
+///////////////////////////////////////////////////////////////////////////
+
+class AResUnlitModelSetImpl : public IResUnlitModelSet
+{
+
+public:		//	Types
+
+	typedef std::vector<AResUnlitModelImpl*> ResUmdArray;
+
+public:		//	Constructor and Destructor
+
+	explicit AResUnlitModelSetImpl(AResInterfaceImpl* pResImpl);
+	virtual ~AResUnlitModelSetImpl(void);
+
+public:		//	Attributes
+
+public:		//	Operations
+	
+	bool Init(const char* szPath);
+	void Release();
+
+protected:	//	Attributes
+
+	AResInterfaceImpl* m_pResImpl;
+	ResUmdArray m_aResUmds;
+
+protected:	//	Operations
+
+	virtual int GetUnlitModelNum() const;
+	virtual IResUnlitModel* GetUnlitModel(int nIdx) const;
+
+};
+
+///////////////////////////////////////////////////////////////////////////
+//	
+//	Inline functions
+//	
+///////////////////////////////////////////////////////////////////////////
+
+
+#endif	//	_AResUnlitModelSetImpl_H_
+
+

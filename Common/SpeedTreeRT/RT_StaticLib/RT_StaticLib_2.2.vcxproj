@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>RT_StaticLib</ProjectName>
+    <ProjectGuid>{92D5D777-77BB-45B3-AB1E-89BBF0D7E1D4}</ProjectGuid>
+    <RootNamespace>RT_StaticLib</RootNamespace>
+    <SccProjectName>"$/SpeedTreeRT/RT_StaticLib", SLEAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35004.147</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release_2.2\</OutDir>
+    <IntDir>.\Release_2.2\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug_2.2\</OutDir>
+    <IntDir>.\Debug_2.2\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release VC 6.0/RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release VC 6.0/</AssemblerListingLocation>
+      <ObjectFileName>.\Release VC 6.0/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release VC 6.0/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\..\Angelica2.2\output\3rdsdk\lib\SpeedTreeRT_Static.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release VC 6.0/RT_StaticLib.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying header file</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\..\Angelica2.2\output\3rdsdk\Include\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug VC 6.0/RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug VC 6.0/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug VC 6.0/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug VC 6.0/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\..\Angelica2.2\output\3rdsdk\lib\SpeedTreeRT_Static_d.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug VC 6.0/RT_StaticLib.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying header file</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\..\Angelica2.2\output\3rdsdk\Include\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SourceCode\BillboardLeaf.cpp" />
+    <ClCompile Include="..\SourceCode\Branch.cpp" />
+    <ClCompile Include="..\SourceCode\BranchInfo.cpp" />
+    <ClCompile Include="..\SourceCode\Camera.cpp" />
+    <ClCompile Include="..\SourceCode\FileAccess.cpp" />
+    <ClCompile Include="..\SourceCode\FrondEngine.cpp" />
+    <ClCompile Include="..\SourceCode\IndexedGeometry.cpp" />
+    <ClCompile Include="..\SourceCode\LeafGeometry.cpp" />
+    <ClCompile Include="..\SourceCode\LeafInfo.cpp" />
+    <ClCompile Include="..\SourceCode\LeafLod.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\ExtendedReal.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\IdvRandom.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.cpp" />
+    <ClCompile Include="..\SourceCode\LibSpline_Source\IdvSpline.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Region.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\RotTransform.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Transform.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec3.cpp" />
+    <ClCompile Include="..\SourceCode\LightingEngine.cpp" />
+    <ClCompile Include="..\SourceCode\ProjectedShadow.cpp" />
+    <ClCompile Include="..\SourceCode\SimpleBillboard.cpp" />
+    <ClCompile Include="..\SourceCode\SpeedTreeRT.cpp" />
+    <ClCompile Include="..\SourceCode\TreeEngine.cpp" />
+    <ClCompile Include="..\SourceCode\TreeInfo.cpp" />
+    <ClCompile Include="..\SourceCode\WindEngine.cpp" />
+    <ClCompile Include="..\SourceCode\WindInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SourceCode\BillboardLeaf.h" />
+    <ClInclude Include="..\SourceCode\Debug.h" />
+    <ClInclude Include="..\SourceCode\Endian.h" />
+    <ClInclude Include="..\SourceCode\FileAccess.h" />
+    <ClInclude Include="..\SourceCode\IdvFastMath.h" />
+    <ClInclude Include="..\SourceCode\IndexedGeometry.h" />
+    <ClInclude Include="..\SourceCode\Instances.h" />
+    <ClInclude Include="..\SourceCode\LeafGeometry.h" />
+    <ClInclude Include="..\SourceCode\LeafLod.h" />
+    <ClInclude Include="..\SourceCode\LibFilename_Source\IdvFilename.h" />
+    <ClInclude Include="..\SourceCode\LibGlobals_Source\IdvGlobals.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\ExtendedReal.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\IdvRandom.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.h" />
+    <ClInclude Include="..\SourceCode\LibSpline_Source\IdvSpline.h" />
+    <ClInclude Include="..\SourceCode\LibVector_Source\IdvVector.h" />
+    <ClInclude Include="..\SourceCode\LightingEngine.h" />
+    <ClInclude Include="..\SourceCode\ProjectedShadow.h" />
+    <ClInclude Include="..\SourceCode\SpeedTreeRT.h" />
+    <ClInclude Include="..\SourceCode\StructsInfo.h" />
+    <ClInclude Include="..\SourceCode\StructsSupport.h" />
+    <ClInclude Include="..\SourceCode\TreeEngine.h" />
+    <ClInclude Include="..\SourceCode\WindEngine.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
